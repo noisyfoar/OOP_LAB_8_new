@@ -1,4 +1,6 @@
-﻿using OOP_LAB_8.factory;
+﻿using OOP_LAB_8.Base;
+using OOP_LAB_8.factory;
+using OOP_LAB_8.Observer;
 using System;
 using System.Drawing.Drawing2D;
 

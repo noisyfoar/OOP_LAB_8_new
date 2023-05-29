@@ -1,9 +1,10 @@
-﻿using OOP_LAB_8.figures;
+﻿using OOP_LAB_8.Base;
+using OOP_LAB_8.figures;
 
 
-    namespace OOP_LAB_8.figures
-    {
-        public class CTriangle : Shape
+namespace OOP_LAB_8.figures
+{
+    public class CTriangle : Shape
         {
             public Help_vector[] vectors { get; set; }
             public Point[] points { get; set; }

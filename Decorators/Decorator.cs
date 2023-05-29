@@ -1,5 +1,7 @@
-﻿using OOP_LAB_8.factory;
+﻿using OOP_LAB_8.Base;
+using OOP_LAB_8.factory;
 using OOP_LAB_8.figures;
+using OOP_LAB_8.Observer;
 using System.Drawing.Drawing2D;
 
 namespace OOP_LAB_8.Decorators

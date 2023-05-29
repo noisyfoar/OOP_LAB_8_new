@@ -1,5 +1,7 @@
 ﻿using OOP_LAB_8.Decorators;
 using OOP_LAB_8.figures;
+using OOP_LAB_8.Observer;
+
 namespace OOP_LAB_8.factory
 {
     public abstract class ShapeArray : Element

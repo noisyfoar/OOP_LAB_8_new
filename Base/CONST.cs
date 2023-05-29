@@ -1,4 +1,4 @@
-﻿namespace OOP_LAB_8
+﻿namespace OOP_LAB_8.Base
 {
     public enum CONST_SHAPE
     {

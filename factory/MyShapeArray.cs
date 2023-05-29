@@ -1,4 +1,5 @@
 ﻿using OOP_LAB_8.Decorators;
+using OOP_LAB_8.Observer;
 using System;
 
 namespace OOP_LAB_8.factory

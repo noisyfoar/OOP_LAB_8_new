@@ -1,4 +1,5 @@
-﻿using OOP_LAB_8.Decorators;
+﻿using OOP_LAB_8.Base;
+using OOP_LAB_8.Decorators;
 using OOP_LAB_8.factory;
 
 namespace OOP_LAB_8.figures

@@ -1,4 +1,6 @@
-﻿namespace OOP_LAB_8.figures
+﻿using OOP_LAB_8.Base;
+
+namespace OOP_LAB_8.figures
 {
     public class CCircle : Shape
     {

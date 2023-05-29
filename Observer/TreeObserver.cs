@@ -1,9 +1,9 @@
-﻿
+﻿using OOP_LAB_8.Base;
 using OOP_LAB_8.Decorators;
 using OOP_LAB_8.factory;
 using OOP_LAB_8.figures;
 
-namespace OOP_LAB_8 
+namespace OOP_LAB_8.Observer
 {
 
     public class TreeObserver : Element
@@ -23,13 +23,21 @@ namespace OOP_LAB_8
             {
                 foreach (Shape obj in ((CGroup)((Decorator)shape).getShape()).shapes)
                 {
-                    processNode(tn, obj);
+                    if(obj.getName() == CONST_SHAPE.Group)
+                    {
+                        TreeNode new_node = new TreeNode(CONST_SHAPE.Group.ToString());
+                        tn.Nodes.Add(new_node);
+                        processNode(new_node, obj);
+                    }
+                    else
+                    {
+                        processNode(tn, obj);
+                    }
                 }
             }
             else
             {
                 tn.Nodes.Add(shape.getName().ToString());
-                tn.LastNode.Checked = shape is Marked;
             }
         }
 
@@ -53,7 +61,7 @@ namespace OOP_LAB_8
             foreach (Shape shape in ((ShapeArray)subject).shapes)
             {
                 TreeNode new_node = new TreeNode(shape.getName().ToString());
-                if(shape is Marked)
+                if (shape is Marked)
                 {
                     new_node.Checked = true;
                 }
@@ -61,7 +69,7 @@ namespace OOP_LAB_8
                 {
                     new_node.Collapse();
                 }
-                if(shape.getName() == CONST_SHAPE.Group)
+                if (shape.getName() == CONST_SHAPE.Group)
                 {
                     processNode(new_node, shape);
                 }

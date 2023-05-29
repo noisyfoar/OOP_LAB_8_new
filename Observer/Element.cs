@@ -1,4 +1,4 @@
-﻿namespace OOP_LAB_8
+﻿namespace OOP_LAB_8.Observer
 {
     public abstract class Element
     {

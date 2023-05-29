@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace OОP_LAB_8
+namespace OОP_LAB_8.Base
 {
     public class List<T> : IEnumerable<T>
     {
@@ -12,7 +12,7 @@ namespace OОP_LAB_8
             internal Node(T value)
             {
                 Console.WriteLine("Node(T _value)");
-                this.Value = value;
+                Value = value;
             }
             internal Node()
             {
